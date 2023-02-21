@@ -33,6 +33,8 @@ async function dbConnect() {
         const opts = {
         }
 
+        mongoose.set("strictQuery", false);
+
         cached.promise = mongoose.connect(`${MONGODB_URI}/recipes_site`, opts).then(mongoose => {
             return mongoose
         })
