@@ -1,0 +1,283 @@
+main.recipe_page {
+    counter-reset: list-counter;
+}
+
+main.recipe_page > div.title_recipe > input {
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    margin-bottom: 20px;
+}
+
+main.recipe_page > .img_info2 {
+    position: relative;
+}
+
+main.recipe_page div.info_recipe > input {
+    z-index: 100;
+    border: none;
+    background-color: transparent;
+    width: 10%;
+    /* color: #686764; */
+    color: white;
+    text-shadow: 0.1em 0.1em rgb(79, 160, 79);
+    margin-left: 3px;
+}
+
+main.recipe_page > textarea.recipe_description {
+    width: 94%;
+    background-color: transparent;
+    resize: none;
+    border: none;
+    font-size: 1rem;
+    padding: 10px 10px;
+}
+
+main.recipe_page > div.ingredients ul {
+    margin-left: 15px;
+}
+
+main.recipe_page > div.ingredients li > input {
+    background-color: transparent;
+    border: none;
+    font-size: 0.8rem;
+    width: 36%;
+    padding-left: 0.2rem;
+}
+
+main.recipe_page > div.ingredients li > select {
+    background-color: transparent;
+    border: none;
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='16' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 109%;
+    width: 32%;
+    margin-left: 3px;
+}
+
+
+main.recipe_page > div.ingredients li > input.quantity {
+    font-size: 0.75rem;
+    width: 17%;
+    margin-left: 5px;
+}
+
+button.btn_minus {
+    display: inline;
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+    background-color: white;
+    border: rgb(79, 160, 79) solid 1px;
+    color: rgb(79, 160, 79);
+    cursor: pointer;
+    padding: 0;
+    margin-left: 7px;
+}
+
+main.recipe_page > div.steps li::before {
+    counter-increment: list-counter 1;
+    content: counter(list-counter)".";
+    color: black;
+    font-family: 'Lobster', cursive;
+    font-size: 1.2rem;
+    vertical-align: top;
+    position: relative;
+    top: -5px;
+    left: -5px;
+}
+
+main.recipe_page > div.steps li {
+    list-style-type: none;
+    display: flex;
+}
+
+main.recipe_page > div.steps li > button.btn_minus {
+    width: 24px;
+}
+
+main.recipe_page > div.steps li > textarea {
+    background-color: transparent;
+    border: none;
+    font-style: italic;
+    font-size: 1rem;
+    resize: none;
+    border: none;
+    position: relative;
+    left: 0.5rem;
+    width: 90%;
+    margin-right: 10px;
+}
+
+main.recipe_page > div.steps > ol {
+    margin-bottom: 0;
+}
+
+main.recipe_page > button.add_recipe {
+    width: 100%;
+    font-size: 2rem;
+    background-color: white;
+    color: rgb(79, 200, 79);
+    padding: 1rem 2rem;
+    font-family: 'Lobster', cursive;
+    border: none;
+    border-top: solid 2px rgb(140, 140, 140);
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+div.steps .btn_plus {
+    margin-top: 0;
+    position: relative;
+    top: -20px;
+}
+
+
+main.recipe_page .btn_plus {
+    display: inline;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    border: rgb(79, 160, 79) solid 1px;
+    color: rgb(79, 160, 79);
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+main.recipe_page .btn_plus:hover {
+    transition: transform 0.3s;
+    transform: scale(1.2);
+}
+
+.dropzone_previewImage {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.dropzone_inputLabel {
+    color: rgb(79, 200, 79) !important;
+    font-family: 'Lobster', cursive !important;
+    padding-top: 20px !important;
+}
+
+.dzu-previewButton {
+    position: absolute;
+    margin-top: 10px;
+    margin-right: 10px;
+    top: 0;
+    right: 0;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.dropzone {
+    overflow: hidden !important;
+    /* border: #4FA04F solid 2px !important; */
+}
+
+@media (min-width: 800px) {
+
+    main.recipe_page > div.title_recipe > input {
+        width: 100%;
+        overflow: scroll;
+        word-wrap: break-word;
+        word-break: break-all;
+    }
+
+    .dropzone {
+        width: 70% !important;
+        min-height: 100px !important;
+    }
+
+    main.recipe_page > textarea.recipe_description {
+        width: 25%;
+        background-color: transparent;
+        resize: none;
+        border: none;
+        font-size: 1rem;
+        padding: 10px 10px;
+        border: dashed rgb(79, 200, 79) 1px;
+        text-justify: newspaper;
+    }
+
+    main.recipe_page div.info_recipe > input {
+        width: 20%;
+    }
+
+    main.recipe_page > .img_info2 {
+        margin: 0;
+        padding: 0;
+        width: 30%;
+    }
+
+
+    main.recipe_page > div.ingredients li > input {
+        font-size: 1rem;
+        width: 20%;
+    }
+
+    main.recipe_page > div.ingredients li > select {
+        font-size: 0.9rem;
+        margin-left: 10px;
+        width: 20%;
+        background-position-x: 100%;
+    }
+
+    main.recipe_page > div.ingredients li > button.btn_minus {
+        width: 25px;
+        height: 25px;
+        margin-left: 30px;
+    }
+    
+    
+    main.recipe_page > div.ingredients li > input.quantity {
+        font-size: 0.9rem;
+        width: 10%;
+        margin-left: 10px;
+    }
+
+    main.recipe_page > div.steps li > button.btn_minus {
+        width: 25px;
+        height: 25px;
+    }
+
+    .dzu-previewButton {
+        top: 10px;
+        right: 20px;
+    }
+
+    main.recipe_page > .img_info2 > .info_recipe {
+        margin-left: 20%;
+        top: 0;
+        scale: 1.3;
+    }
+
+    main.recipe_page > button.add_recipe {
+        width: 30%;
+        margin-bottom: 30px;
+        color: rgb(79, 200, 79);
+        border: 2px rgb(79, 160, 79) solid;
+        border-radius: 30px;
+    }
+
+    main.recipe_page > button.add_recipe:hover {
+        -webkit-animation: heartbeat 3s ease-in-out infinite both;
+        animation: heartbeat 3s ease-in-out infinite both;
+    }
+  
+}
+

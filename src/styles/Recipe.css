@@ -1,0 +1,193 @@
+main.recipe_page {
+    height: 100%;
+}
+
+main.recipe_page>div.title_recipe {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    padding: 30px 10px 10px;
+}
+
+main.recipe_page>div.title_recipe>h1 {
+    margin-top: 0;
+    /* margin-bottom: 10px; */
+}
+
+main.recipe_page>.img_info {
+    position: relative;
+}
+
+main.recipe_page>p.recipe_description {
+    padding: 1rem;
+    text-align: justify;
+    text-justify: newspaper;
+}
+
+main.recipe_page>div.ingredients {
+    border-top: rgb(79, 160, 79) 1px dashed;
+    border-bottom: rgb(79, 160, 79) 1px dashed;
+}
+
+main.recipe_page>div.ingredients>h2 {
+    margin-left: 10px;
+    font-family: 'Lobster', cursive;
+    margin-bottom: 0;
+}
+
+main.recipe_page>div.ingredients li::marker {
+    content: "◼";
+    color: rgb(79, 160, 79);
+}
+
+main.recipe_page>div.ingredients>ul {
+    margin-left: 20px;
+    padding: 1.3rem;
+    line-height: 2.1rem;
+    margin-top: 0;
+}
+
+main.recipe_page>div.ingredients li>span {
+    position: relative;
+    left: 0.5rem;
+}
+
+main.recipe_page>div.steps>h2 {
+    margin-left: 10px;
+    font-family: 'Lobster', cursive;
+    margin-bottom: 0;
+    font-style: italic;
+}
+
+main.recipe_page>div.steps>ol {
+    padding: 2rem;
+    margin-top: 0;
+    margin-left: 20px;
+}
+
+main.recipe_page>div.steps li::marker {
+    color: black;
+    font-family: 'Lobster', cursive;
+    font-size: 1.2rem;
+}
+
+main.recipe_page>div.steps li {
+    font-style: italic;
+    padding-bottom: 1.5rem;
+
+}
+
+main.recipe_page>div.steps li>span {
+    position: relative;
+    left: 0.3rem;
+
+}
+
+div.info_recipe {
+    display: flex;
+    background-color: transparent;
+    position: absolute;
+    align-items: center;
+    z-index: 9;
+    width: 90%;
+    justify-content: center;
+}
+
+div.info_recipe > img {
+    display: inline;
+    width: 15px;
+    height: 15px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 100px;
+    margin-left: 10px;
+}
+
+@media (min-width: 800px) {
+    main.recipe_page {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main.recipe_page>div.title_recipe {
+        width: 100%;
+        /* margin-bottom: 30px; */
+    }
+
+    main.recipe_page>.img_info {
+        margin: 0;
+        padding: 0;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        aspect-ratio: 1;
+    }
+
+    main.recipe_page .recipe_img {
+        width: 70%;
+        display: inline;
+        /* margin-left: 70px; */
+        border-radius: 25%;
+        object-fit: cover;
+    }
+
+    main.recipe_page img.no_description {
+        margin-left: 0;
+    }
+
+    main.recipe_page>p.recipe_description {
+        display: inline;
+        width: 25%;
+        text-justify: newspaper;
+        margin-left: 40px;
+        padding: 1rem;
+        border: dashed 1px rgb(79, 160, 79);
+    }
+
+    main.recipe_page div.info_recipe {
+        position: relative;
+        width: 60%;
+        top: 50px;
+        left: 50px;
+        justify-content: start;
+
+    }
+
+    main.recipe_page>div.ingredients {
+        width: 100%;
+        margin-top: 30px;
+        padding-left: 30px;
+
+    }
+
+    main.recipe_page>div.ingredients>ul {
+        padding-top: 15px;
+        padding-left: 75px;
+    }
+
+    main.recipe_page>div.steps {
+        width: 100%;
+        padding-left: 30px;
+    }
+
+    main.recipe_page>div.steps>ol {
+        width: 100%;
+        padding-top: 20px;
+        padding-left: 40px;
+        margin-top: 20px;
+        line-height: 1.7rem;
+    }
+
+    main.recipe_page>div.steps li {
+        padding-bottom: 0.3rem;
+        margin-bottom: 1.3rem;
+        word-wrap: break-word;
+        width: 90%;
+    }
+
+
+
+
+}

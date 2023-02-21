@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+header.navbar {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(79, 160, 79);
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-bottom: solid black 2px;
+}
+
+header.navbar > h1 {
+    color: white;
+    font-family: 'Bangers', cursive;
+    text-shadow: 0.1rem 0.5rem black;
+    font-size: 2.5rem;
+}
+
+header.navbar img.left_img {
+    margin-left: 20px;
+    position: absolute;
+    left: 0;
+    top: 15px;
+}
+
+header.navbar img.right_img {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    scale: 1.3;
+    cursor: pointer;
+    z-index: 9;
+}
+
+div.search_result {
+    width: 130%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: white;
+    border: black 1px solid;
+    cursor: pointer;
+    height: 70px;
+}
+
+div.search_result:hover {
+    background-color: rgb(200, 200, 227);
+}
+
+div.search_result .search_result_title {
+    width: 100%;
+    margin-left: 30px;
+    font-family: 'Lobster', cursive;
+    color: rgb(79, 160, 79);
+}
+
+div.search_result .search_result_img {
+    width: 40%;
+    height: 70px;
+    object-fit: cover;
+    /* margin-left: 3px; */
+}
+
+@media (min-width: 800px) {
+
+    header.navbar img.right_img {
+        display: none;
+    }
+
+    .react-autosuggest__container {
+        right: 15%;
+        width: 20%;
+    }
+
+    .react-autosuggest__input {
+        width: 130%;
+    }
+}

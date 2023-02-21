@@ -1,0 +1,16 @@
+div.recipe_list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    margin: auto;
+    padding-top: 30px;
+}
+
+@media (min-width: 800px) {
+    div.recipe_list {
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 20px
+    }
+}
